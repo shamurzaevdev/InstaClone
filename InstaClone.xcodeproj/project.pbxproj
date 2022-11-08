@@ -13,6 +13,11 @@
 		652D4B0C2919C880004EDEA9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 652D4B0A2919C880004EDEA9 /* Main.storyboard */; };
 		652D4B0E2919C884004EDEA9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 652D4B0D2919C884004EDEA9 /* Assets.xcassets */; };
 		652D4B112919C884004EDEA9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 652D4B0F2919C884004EDEA9 /* LaunchScreen.storyboard */; };
+		652D4B1B2919EB26004EDEA9 /* StoriesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652D4B192919EB26004EDEA9 /* StoriesTableViewCell.swift */; };
+		652D4B1C2919EB26004EDEA9 /* StoriesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 652D4B1A2919EB26004EDEA9 /* StoriesTableViewCell.xib */; };
+		652D4B202919EB3C004EDEA9 /* StoriesCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 652D4B1E2919EB3C004EDEA9 /* StoriesCollectionViewCell.xib */; };
+		652D4B212919EB3C004EDEA9 /* StoriesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652D4B1F2919EB3C004EDEA9 /* StoriesCollectionViewCell.swift */; };
+		652D4B232919EB53004EDEA9 /* StoriesData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652D4B222919EB53004EDEA9 /* StoriesData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +29,11 @@
 		652D4B0D2919C884004EDEA9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		652D4B102919C884004EDEA9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		652D4B122919C884004EDEA9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		652D4B192919EB26004EDEA9 /* StoriesTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoriesTableViewCell.swift; sourceTree = "<group>"; };
+		652D4B1A2919EB26004EDEA9 /* StoriesTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StoriesTableViewCell.xib; sourceTree = "<group>"; };
+		652D4B1E2919EB3C004EDEA9 /* StoriesCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StoriesCollectionViewCell.xib; sourceTree = "<group>"; };
+		652D4B1F2919EB3C004EDEA9 /* StoriesCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoriesCollectionViewCell.swift; sourceTree = "<group>"; };
+		652D4B222919EB53004EDEA9 /* StoriesData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoriesData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +66,8 @@
 		652D4B032919C880004EDEA9 /* InstaClone */ = {
 			isa = PBXGroup;
 			children = (
+				652D4B1D2919EB3C004EDEA9 /* Collection Cell */,
+				652D4B182919EB26004EDEA9 /* Table Cell */,
 				652D4B042919C880004EDEA9 /* AppDelegate.swift */,
 				652D4B062919C880004EDEA9 /* SceneDelegate.swift */,
 				652D4B082919C880004EDEA9 /* MainMenuViewController.swift */,
@@ -63,8 +75,27 @@
 				652D4B0D2919C884004EDEA9 /* Assets.xcassets */,
 				652D4B0F2919C884004EDEA9 /* LaunchScreen.storyboard */,
 				652D4B122919C884004EDEA9 /* Info.plist */,
+				652D4B222919EB53004EDEA9 /* StoriesData.swift */,
 			);
 			path = InstaClone;
+			sourceTree = "<group>";
+		};
+		652D4B182919EB26004EDEA9 /* Table Cell */ = {
+			isa = PBXGroup;
+			children = (
+				652D4B192919EB26004EDEA9 /* StoriesTableViewCell.swift */,
+				652D4B1A2919EB26004EDEA9 /* StoriesTableViewCell.xib */,
+			);
+			path = "Table Cell";
+			sourceTree = "<group>";
+		};
+		652D4B1D2919EB3C004EDEA9 /* Collection Cell */ = {
+			isa = PBXGroup;
+			children = (
+				652D4B1E2919EB3C004EDEA9 /* StoriesCollectionViewCell.xib */,
+				652D4B1F2919EB3C004EDEA9 /* StoriesCollectionViewCell.swift */,
+			);
+			path = "Collection Cell";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,7 +156,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				652D4B202919EB3C004EDEA9 /* StoriesCollectionViewCell.xib in Resources */,
 				652D4B112919C884004EDEA9 /* LaunchScreen.storyboard in Resources */,
+				652D4B1C2919EB26004EDEA9 /* StoriesTableViewCell.xib in Resources */,
 				652D4B0E2919C884004EDEA9 /* Assets.xcassets in Resources */,
 				652D4B0C2919C880004EDEA9 /* Main.storyboard in Resources */,
 			);
@@ -139,8 +172,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				652D4B092919C880004EDEA9 /* MainMenuViewController.swift in Sources */,
+				652D4B1B2919EB26004EDEA9 /* StoriesTableViewCell.swift in Sources */,
 				652D4B052919C880004EDEA9 /* AppDelegate.swift in Sources */,
+				652D4B212919EB3C004EDEA9 /* StoriesCollectionViewCell.swift in Sources */,
 				652D4B072919C880004EDEA9 /* SceneDelegate.swift in Sources */,
+				652D4B232919EB53004EDEA9 /* StoriesData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
