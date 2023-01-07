@@ -119,7 +119,7 @@
                                             <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0jf-dO-7ep">
                                                 <rect key="frame" x="229" y="8" width="200" height="250"/>
                                                 <subviews>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="deni" translatesAutoresizingMaskIntoConstraints="NO" id="1O0-ch-P4U">
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="userDeni" translatesAutoresizingMaskIntoConstraints="NO" id="1O0-ch-P4U">
                                                         <rect key="frame" x="10" y="0.0" width="181" height="166"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     </imageView>
@@ -311,9 +311,9 @@
         </tableViewCell>
     </objects>
     <resources>
-        <image name="deni" width="233" height="181"/>
         <image name="gevorg" width="154" height="154"/>
         <image name="luga" width="169" height="169"/>
+        <image name="userDeni" width="233" height="181"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

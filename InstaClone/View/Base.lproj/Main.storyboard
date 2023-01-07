@@ -163,7 +163,7 @@
                                         <rect key="frame" x="21" y="-6" width="49" height="44"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" image="messeng" title=""/>
+                                        <buttonConfiguration key="configuration" style="plain" image="messenger" title=""/>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -253,7 +253,7 @@
                         <viewLayoutGuide key="safeArea" id="1zy-jh-tlP"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="" image="addd" id="Im5-x4-VJn"/>
+                    <tabBarItem key="tabBarItem" title="" image="addImage" id="Im5-x4-VJn"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XY7-Lf-l6S" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -285,7 +285,7 @@
                         <viewLayoutGuide key="safeArea" id="Xv2-IB-arS"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="" image="user" id="4n6-gZ-TEp"/>
+                    <tabBarItem key="tabBarItem" title="" image="userIcon" id="4n6-gZ-TEp"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lTP-T8-sz3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -294,14 +294,14 @@
     </scenes>
     <resources>
         <image name="Instagram" width="3840" height="2160"/>
-        <image name="addd" width="24" height="25"/>
+        <image name="addImage" width="24" height="25"/>
         <image name="durov" width="149" height="146"/>
         <image name="glass" width="25" height="25"/>
         <image name="homeInstAsset" width="24" height="25"/>
         <image name="like" width="27" height="25"/>
-        <image name="messeng" width="25" height="26"/>
+        <image name="messenger" width="25" height="26"/>
         <image name="musk" width="151" height="149"/>
-        <image name="user" width="25" height="25"/>
+        <image name="userIcon" width="25" height="25"/>
         <image name="usman" width="149" height="147"/>
         <image name="zverik" width="150" height="150"/>
         <systemColor name="systemBackgroundColor">
