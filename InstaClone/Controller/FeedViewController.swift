@@ -60,10 +60,9 @@ final class FeedViewController: UIViewController {
         
 }
 
-
-    // MARK: - UITableViewDelegate, UITableViewDataSource
-extension FeedViewController: UITableViewDelegate, UITableViewDataSource {
-    
+    // MARK: Extensions
+    // MARK: - UITableViewDataSource
+extension FeedViewController: UITableViewDataSource {
     func numberOfSections(in tableView: UITableView) -> Int {
         1
     }
@@ -76,30 +75,32 @@ extension FeedViewController: UITableViewDelegate, UITableViewDataSource {
         switch indexPath.row {
         case 0:
             guard let cell = tableView.dequeueReusableCell(withIdentifier: FeedTableViewCell.identifier, for: indexPath) as? FeedTableViewCell else {
-                fatalError()
+                fatalError("The cell FeedTableViewCell was not created")
             }
             cell.configure(with: models[indexPath.row])
             return cell
         case 1:
             guard let cell = tableView.dequeueReusableCell(withIdentifier: RecommendationsTableViewCell.identifier, for: indexPath) as? RecommendationsTableViewCell else {
-                fatalError()
+                fatalError("The cell RecommendationsTableViewCell was not created")
             }
             return cell
         case 2:
             guard let cell = tableView.dequeueReusableCell(withIdentifier: FeedTableViewCell.identifier, for: indexPath) as? FeedTableViewCell else {
-                fatalError()
+                fatalError("The cell FeedTableViewCell was not created")
             }
             cell.configure(with: models[1])
             return cell
         default:
             guard let cell = tableView.dequeueReusableCell(withIdentifier: FeedTableViewCell.identifier, for: indexPath) as? FeedTableViewCell else {
-                            fatalError()
-                        }
-            
+                            fatalError("The cell FeedTableViewCell was not created")
+            }
             return cell
-                    }
+        }
     }
-    
+}
+
+    //MARK: - UITableViewDelegate
+extension FeedViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         switch indexPath.row {
         case 0:
@@ -111,9 +112,5 @@ extension FeedViewController: UITableViewDelegate, UITableViewDataSource {
         default:
             return 515.0
         }
-    }
-    
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
     }
 }

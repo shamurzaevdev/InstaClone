@@ -10,21 +10,17 @@ import UIKit
 final class StoriesCollectionViewCell: UICollectionViewCell {
     
     //MARK: - IBOutlets
-    @IBOutlet var nickNamesLabel: UILabel!
-    @IBOutlet var avatarsImageViews: UIImageView!
+    @IBOutlet private var nickNamesLabel: UILabel!
+    @IBOutlet private var avatarsImageViews: UIImageView!
     
     static let identifier = "StoriesCollectionViewCell"
-    static func nib() -> UINib {
+    static var nib: UINib {
         return UINib(nibName: "StoriesCollectionViewCell", bundle: nil)
     }
 
-    override func awakeFromNib() {
-        super.awakeFromNib()
-    }
-    
     public func configure(with model: StoriesData) {
-        self.nickNamesLabel.text = model.text
-        self.avatarsImageViews?.image = UIImage(named: model.imageName)
+        nickNamesLabel.text = model.text
+        avatarsImageViews?.image = UIImage(named: model.imageName)
     }
 
 }

@@ -7,29 +7,25 @@
 
 import UIKit
 
-class FeedTableViewCell: UITableViewCell {
+/// There are we configure the properties of our cells with posts
+final class FeedTableViewCell: UITableViewCell {
     
-    @IBOutlet var userImage: UIImageView?
-    @IBOutlet var postImage: UIImageView?
-    @IBOutlet var usernameLabel: UILabel?
-    @IBOutlet var likesLabel: UILabel?
-    @IBOutlet var usernameUnderPost: UILabel?
-    @IBOutlet var comment: UILabel?
+    // MARK: - IBOutlets
+    @IBOutlet private var userImage: UIImageView?
+    @IBOutlet private var postImage: UIImageView?
+    @IBOutlet private var usernameLabel: UILabel?
+    @IBOutlet private var likesLabel: UILabel?
+    @IBOutlet private var usernameUnderPost: UILabel?
+    @IBOutlet private var comment: UILabel?
     
+    // MARK: - static properties
     static let identifier = "FeedTableViewCell"
     
     static var nib: UINib {
         return UINib(nibName: "FeedTableViewCell", bundle: nil)
     }
-
-    override func awakeFromNib() {
-        super.awakeFromNib()
-    }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-    }
     
+    // MARK: - Methods
     func configure(with model: InstaPost) {
         likesLabel?.text = "Likes: \(model.numberOfLikes)"
         usernameLabel?.text = model.username

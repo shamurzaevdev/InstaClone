@@ -7,20 +7,13 @@
 
 import UIKit
 
-class RecommendationsTableViewCell: UITableViewCell, UIScrollViewDelegate {
+/// There are we configure the properties of our cells with recommendations
+final class RecommendationsTableViewCell: UITableViewCell, UIScrollViewDelegate {
     
+    // MARK: - Static properties
     static let identifier = "RecommendationsTableViewCell"
     
     static var nib: UINib {
         return UINib(nibName: "RecommendationsTableViewCell", bundle: nil)
     }
-
-    override func awakeFromNib() {
-        super.awakeFromNib()
-    }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-    }
-    
 }
